@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///C:/Users/deone/Documents/Codex/2026-06-29/cha/outputs/hb0610_media_review_report.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HB0610 媒体报道总结</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --ink: #19202a;
+      --muted: #687383;
+      --line: #dfe5ed;
+      --panel: #ffffff;
+      --blue: #2b6fd6;
+      --cyan: #13a7b7;
+      --green: #1d9a6c;
+      --amber: #c77a13;
+      --red: #c64c4c;
+      --soft-blue: #eaf2ff;
+      --soft-green: #eaf8f1;
+      --soft-amber: #fff4df;
+      --soft-red: #fff0f0;
+      --shadow: 0 10px 30px rgba(25, 32, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px 56px;
+    }
+
+    header {
+      padding: 28px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      max-width: 880px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .kpi-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .two-col {
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      align-items: start;
+    }
+
+    .three-col {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .card.pad {
+      padding: 18px;
+    }
+
+    .kpi {
+      min-height: 136px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .kpi .value {
+      margin-top: 10px;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .kpi .note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .judgment-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .judgment {
+      padding: 18px;
+      min-height: 166px;
+      border-top: 4px solid var(--blue);
+    }
+
+    .judgment:nth-child(2) {
+      border-top-color: var(--amber);
+    }
+
+    .judgment:nth-child(3) {
+      border-top-color: var(--green);
+    }
+
+    .judgment .index {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .judgment .headline {
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .judgment p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 14px;
+      align-items: center;
+    }
+
+    .verdict {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: conic-gradient(var(--green) 0 72%, var(--amber) 72% 92%, var(--line) 92% 100%);
+      display: grid;
+      place-items: center;
+      color: var(--panel);
+      font-weight: 800;
+      text-align: center;
+      box-shadow: inset 0 0 0 10px var(--panel);
+    }
+
+    .summary p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .summary strong {
+      color: var(--ink);
+    }
+
+    .callout {
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft-blue);
+      border-radius: 6px;
+      color: #23415f;
+    }
+
+    .callout.warning {
+      border-left-color: var(--amber);
+      background: var(--soft-amber);
+      color: #5a3a0d;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    th,
+    td {
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      background: #eef3f8;
+      color: #344052;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .num {
+      text-align: right;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .pill.green {
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .pill.amber {
+      background: var(--soft-amber);
+      color: var(--amber);
+    }
+
+    .pill.blue {
+      background: var(--soft-blue);
+      color: var(--blue);
+    }
+
+    .pill.red {
+      background: var(--soft-red);
+      color: var(--red);
+    }
+
+    .bar-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr) 74px;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .bar-label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .track {
+      height: 14px;
+      border-radius: 4px;
+      background: #e8edf4;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      min-width: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      padding-left: 16px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 5px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .time-item {
+      position: relative;
+      padding: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .time-item::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -16px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--blue);
+      border: 3px solid var(--bg);
+    }
+
+    .time-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+
+    .time-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .insight-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .insight-list li {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .quote-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .quote-card .topic {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--blue);
+      flex: 0 0 auto;
+    }
+
+    .quote-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .concern-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .concern-row {
+      display: grid;
+      grid-template-columns: 128px minmax(0, 1fr) 48px;
+      gap: 10px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .concern-row + .concern-row {
+      margin-top: 12px;
+    }
+
+    .concern-track {
+      height: 18px;
+      border-radius: 5px;
+      background: #e8edf4;
+      overflow: hidden;
+    }
+
+    .concern-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--amber), var(--red));
+    }
+
+    .source-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .priority {
+      display: grid;
+      gap: 12px;
+    }
+
+    .priority-item {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 12px;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .risk {
+      display: grid;
+      place-items: center;
+      min-height: 58px;
+      border-radius: 6px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .risk.high {
+      background: var(--soft-red);
+      color: var(--red);
+    }
+
+    .risk.mid {
+      background: var(--soft-amber);
+      color: var(--amber);
+    }
+
+    .risk.low {
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .priority-item p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .action {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .action .owner {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .kpi-grid,
+      .two-col,
+      .three-col,
+      .judgment-grid,
+      .quote-grid,
+      .concern-grid,
+      .action-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .summary {
+        grid-template-columns: 1fr;
+      }
+
+      .verdict {
+        width: 104px;
+        height: 104px;
+      }
+
+      .bar-row {
+        grid-template-columns: 112px minmax(0, 1fr) 64px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .card,
+      table,
+      .time-item,
+      .priority-item {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="eyebrow">JSAUX HB0610 · Switch 2 6-in-1 Gaming Dock</div>
+      <h1>HB0610 媒体报道总结</h1>
+<div class="meta">
+        <span class="tag">报告日期：2026/6/29</span>
+        <span class="tag">样本：8 篇报道</span>
+        <span class="tag">核心市场：英文游戏/科技媒体</span>
+</div>
+    </header>
+
+    <section>
+      <div class="grid kpi-grid">
+        <div class="card kpi">
+          <div>
+            <div class="label">总曝光量级</div>
+            <div class="value">约33.5M</div>
+          </div>
+          <div class="note">8 家媒体访问量级加总估算，非文章实际浏览量</div>
+        </div>
+        <div class="card kpi">
+          <div>
+            <div class="label">集中爆发节点</div>
+            <div class="value">6/23</div>
+          </div>
+          <div class="note">5 篇报道集中发布，贡献约 99.6% 曝光</div>
+        </div>
+        <div class="card kpi">
+          <div>
+            <div class="label">头部媒体贡献</div>
+            <div class="value">92%</div>
+          </div>
+          <div class="note">The Verge、Pocket Tactics、Notebookcheck、Nintendo Life</div>
+        </div>
+        <div class="card kpi">
+          <div>
+            <div class="label">深度体验内容</div>
+            <div class="value">2 篇</div>
+          </div>
+          <div class="note">HackInformer、SafariGames，其余多为资讯报道</div>
+        </div>
+      </div>
+    </section>
+
+<section class="grid two-col">
+      <div class="card pad">
+        <h2>一句话结论</h2>
+        <div class="summary">
+          <div class="verdict">正面<br>偏强</div>
+          <div>
+            <p><strong>HB0610 已经建立了“比官方 Dock 更便宜、功能更全”的第一印象。</strong></p>
+            <p>媒体愿意写它，是因为卖点集中、标题好写：$59.99、6-in-1、4 个 Joy-Con 2 同时充电、可折叠、带网口和收纳。</p>
+            <p>但用户真正下单前会追问：第三方 Dock 是否安全、满载是否稳定、散热是否可靠、自己是否真的需要 4 手柄充电。</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout warning">
+        <h3>当前最大问题</h3>
+        <div>报道声量已经起来，但“数据型证明”不足。下一波内容应从新品介绍转为实测验证：长时间 TV 模式、满载充电温度、官方 Dock 对比、保护壳兼容和安全保护说明。</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>媒体曝光排行</h2>
+      <div class="card pad">
+        <div class="bar-list">
+          <div class="bar-row">
+            <div class="bar-label">The Verge</div>
+            <div class="track"><div class="fill" style="width:100%"></div></div>
+            <div class="num">11.3M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Pocket Tactics</div>
+            <div class="track"><div class="fill" style="width:63.7%"></div></div>
+            <div class="num">7.2M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Notebookcheck</div>
+            <div class="track"><div class="fill" style="width:60.2%"></div></div>
+            <div class="num">6.8M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Nintendo Life</div>
+            <div class="track"><div class="fill" style="width:49.6%"></div></div>
+            <div class="num">5.6M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Báo Nghệ An</div>
+            <div class="track"><div class="fill" style="width:22.1%"></div></div>
+            <div class="num">2.5M</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">HackInformer</div>
+            <div class="track"><div class="fill" style="width:0.5%"></div></div>
+            <div class="num">58.6K</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Ramp</div>
+            <div class="track"><div class="fill" style="width:0.4%"></div></div>
+            <div class="num">43K</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">SafariGames</div>
+            <div class="track"><div class="fill" style="width:0.2%"></div></div>
+            <div class="num">23.8K</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>传播节奏</h2>
+      <div class="timeline">
+        <div class="time-item">
+          <div class="time-head">
+            <span>6/1 · 种草进入场景</span>
+            <span>43K</span>
+          </div>
+          <p>Ramp 将产品放入“值得买科技小物”合集，强调整理桌面、充电和连接便利性，是生活方式型预热。</p>
+        </div>
+        <div class="time-item">
+          <div class="time-head">
+            <span>6/3 · 垂直媒体上手</span>
+            <span>82.4K</span>
+          </div>
+          <p>HackInformer 与 SafariGames 更接近上手体验，开始建立“家庭游戏中心”“多手柄充电收纳”的实际使用场景。</p>
+        </div>
+        <div class="time-item">
+          <div class="time-head">
+            <span>6/23 · 头部媒体集中扩散</span>
+            <span>约33.4M</span>
+          </div>
+          <p>Notebookcheck、Pocket Tactics、Nintendo Life、The Verge、Báo Nghệ An 同日集中报道，形成主声量，口径集中在价格、功能和官方 Dock 对比。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>媒体明细矩阵</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>媒体</th>
+            <th class="num">流量</th>
+            <th>内容类型</th>
+            <th>态度</th>
+            <th>核心信息</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6/1</td>
+            <td><a href="https://www.ramp.space/en/artikel-blog/good-choice-tech-gadgets-that-are-worthwhile/">Ramp</a></td>
+            <td class="num">43K</td>
+            <td>科技推荐合集</td>
+            <td><span class="pill green">正面</span></td>
+            <td>把 HB0610 包装成“让桌面更整洁”的实用科技小物。</td>
+          </tr>
+          <tr>
+            <td>6/3</td>
+            <td><a href="https://hackinformer.com/jsaux-6-in-1-gaming-dock-for-nintendo-switch-2-hands-on-impressions/">HackInformer</a></td>
+            <td class="num">58.6K</td>
+            <td>Hands-on 上手</td>
+            <td><span class="pill green">正面</span></td>
+            <td>认为它更像娱乐中心，适合固定 TV 场景；同时提醒第三方 Dock 长期兼容性需要关注。</td>
+          </tr>
+          <tr>
+            <td>6/3</td>
+            <td><a href="https://www.safarigames.it/jsaux-gaming-6-in-1-gaming-dock-for-switch/">SafariGames</a></td>
+            <td class="num">23.8K</td>
+            <td>上手/评测</td>
+            <td><span class="pill green">正面</span></td>
+            <td>使用 Nintendo 60W 电源测试，强调解决多手柄、多代设备、集中充电问题。</td>
+          </tr>
+          <tr>
+            <td>6/23</td>
+            <td><a href="https://www.notebookcheck.net/Jsaux-launches-6-in-1-gaming-dock-for-the-Nintendo-Switch-2.1326741.0.html">Notebookcheck</a></td>
+            <td class="num">6.8M</td>
+            <td>新品报道</td>
+            <td><span class="pill green">正面</span></td>
+            <td>强调价格低于官方 Dock，并列出 4 Joy-Con 充电、RJ45、HDMI、USB-A、卡带/SD 卡收纳。</td>
+          </tr>
+          <tr>
+            <td>6/23</td>
+            <td><a href="https://www.pockettactics.com/jsaux-nintendo-switch-2-dock-release">Pocket Tactics</a></td>
+            <td class="num">7.2M</td>
+            <td>新品报道</td>
+            <td><span class="pill green">强正面</span></td>
+            <td>标题直接对比官方 Dock，突出“更好看、半价、功能更多”。</td>
+          </tr>
+          <tr>
+            <td>6/23</td>
+            <td><a href="https://www.nintendolife.com/news/2026/06/jsauxs-new-6-in-1-switch-2-dock-is-a-lot">Nintendo Life</a></td>
+            <td class="num">5.6M</td>
+            <td>新品报道+评论区</td>
+            <td><span class="pill amber">中性谨慎</span></td>
+            <td>承认功能丰富，但认为产品“东西很多”，并引出用户对空间、散热、安全的讨论。</td>
+          </tr>
+          <tr>
+            <td>6/23</td>
+            <td><a href="https://www.theverge.com/tech/954645/jsaux-6-in-1-nintendo-switch-2-dock-charge-joy-cons">The Verge</a></td>
+            <td class="num">11.3M</td>
+            <td>资讯聚合</td>
+            <td><span class="pill blue">高曝光</span></td>
+            <td>提供最高量级曝光，但内容深度较浅，更多是资讯入口价值。</td>
+          </tr>
+          <tr>
+            <td>6/23</td>
+            <td>Báo Nghệ An</td>
+            <td class="num">2.5M</td>
+            <td>新品报道</td>
+            <td><span class="pill green">正面</span></td>
+            <td>标题聚焦“6-in-1 Dock”和“同时充 4 个控制器”。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grid two-col">
+      <div>
+        <h2>媒体共识：为什么愿意报道</h2>
+        <ul class="insight-list">
+          <li><strong>价格好讲：</strong>$59.99 对比官方 Dock 形成天然标题点。</li>
+          <li><strong>功能密度高：</strong>Dock、充电、收纳、网口、USB、视频输出集中在一个产品里。</li>
+          <li><strong>场景明确：</strong>家庭客厅、多人游戏、第二 Dock、固定娱乐中心。</li>
+          <li><strong>品牌有基础：</strong>JSAUX 在 Steam Deck 和掌机配件领域已有认知积累。</li>
+        </ul>
+      </div>
+      <div>
+        <h2>媒体疑虑：还缺什么证据</h2>
+        <ul class="insight-list">
+          <li><strong>缺长期稳定测试：</strong>还没有足够多的长时间 TV 模式实测。</li>
+          <li><strong>缺温度数据：</strong>用户会拿它和带风扇的官方 Dock 对比。</li>
+          <li><strong>缺安全背书：</strong>第三方 Dock 对 Switch 用户仍是敏感词。</li>
+          <li><strong>规格表述需统一：</strong>不同页面对 HDMI 和输出规格的写法容易让用户困惑。</li>
+        </ul>
+      </div>
+    </section>
+
+<section>
+      <h2>评论区用户洞察</h2>
+      <div class="card pad" style="margin-bottom:14px;">
+        <div class="concern-grid">
+          <div>
+            <h3>用户疑虑主题图</h3>
+            <div class="source-note" style="margin-top:0;">基于 Nintendo Life 可见评论的人工主题归类；同一条评论可归入多个主题，用于看方向，不代表全网统计。</div>
+          </div>
+          <div>
+            <div class="concern-row">
+              <div>第三方安全</div>
+              <div class="concern-track"><div class="concern-fill" style="width:100%"></div></div>
+              <div class="num">高</div>
+            </div>
+            <div class="concern-row">
+              <div>价格/官方对比</div>
+              <div class="concern-track"><div class="concern-fill" style="width:82%"></div></div>
+              <div class="num">高</div>
+            </div>
+            <div class="concern-row">
+              <div>购买观望</div>
+              <div class="concern-track"><div class="concern-fill" style="width:76%"></div></div>
+              <div class="num">中高</div>
+            </div>
+            <div class="concern-row">
+              <div>散热/风扇</div>
+              <div class="concern-track"><div class="concern-fill" style="width:64%"></div></div>
+              <div class="num">中</div>
+            </div>
+            <div class="concern-row">
+              <div>4 手柄必要性</div>
+              <div class="concern-track"><div class="concern-fill" style="width:45%"></div></div>
+              <div class="num">中</div>
+            </div>
+            <div class="concern-row">
+              <div>便携/配件丢失</div>
+              <div class="concern-track"><div class="concern-fill" style="width:38%"></div></div>
+              <div class="num">低中</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quote-grid">
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>购买兴趣</div>
+          <p>用户对产品有冲动兴趣，典型心态是“我可能不需要，但我想要”。说明外观和功能组合有吸引力。</p>
+        </div>
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>价格认可</div>
+          <p>官方 Dock 价格被用户认为偏高，HB0610 的 $59.99 容易形成“更划算”的价值判断。</p>
+        </div>
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>安全焦虑</div>
+          <p>部分用户仍担心第三方 Dock 会损坏主机，需要主动说明保护机制和兼容测试。</p>
+        </div>
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>散热追问</div>
+          <p>Switch 2 官方 Dock 有风扇，因此用户自然会问：HB0610 长时间 TV 模式会不会热。</p>
+        </div>
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>真实需求分化</div>
+          <p>有用户质疑不是所有人都需要同时充 4 个 Joy-Con；该卖点更适合家庭多人和共享设备场景。</p>
+        </div>
+        <div class="quote-card">
+          <div class="topic"><span class="dot"></span>便携与收纳</div>
+          <p>折叠设计被认可，但用户也担心小 adapter dock 是否容易丢，便携卖点需要更谨慎。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>风险优先级</h2>
+      <div class="priority">
+        <div class="priority-item">
+          <div class="risk high">高优先级</div>
+          <div>
+            <h3>第三方 Dock 安全与长期稳定</h3>
+            <p>这是影响购买转化的核心门槛。建议用保护机制说明、兼容列表、长时间运行测试和固件适配承诺来降低疑虑。</p>
+          </div>
+        </div>
+        <div class="priority-item">
+          <div class="risk high">高优先级</div>
+          <div>
+            <h3>散热与满载温度</h3>
+            <p>用户会直接对比官方 Dock 的风扇设计。建议补充 2-3 小时 TV 模式、4 Joy-Con 同充、网口连接状态下的表面温度数据。</p>
+          </div>
+        </div>
+        <div class="priority-item">
+          <div class="risk mid">中优先级</div>
+          <div>
+            <h3>规格口径不一致</h3>
+            <p>媒体与官方信息中 HDMI 版本、4K@60Hz/4K@120Hz 表述需要统一。建议对外使用“输出能力受主机、显示器、线材和游戏支持影响”的稳妥口径。</p>
+          </div>
+        </div>
+        <div class="priority-item">
+          <div class="risk mid">中优先级</div>
+          <div>
+            <h3>便携定位过度</h3>
+            <p>产品可折叠，但不是最小旅行 Dock。建议主打“可收纳的家庭游戏中心”，弱化极致便携。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section>
+      <h2>建议对外传播话术</h2>
+      <div class="card pad">
+        <div class="callout">
+          HB0610 不是单纯替代官方 Dock，而是面向家庭客厅和多人游戏场景的一体化 Switch 2 游戏中心：以更低价格提供 TV 输出、4 Joy-Con 2 同时充电、Pro 手柄/主机充电、有线网络、USB 扩展和游戏卡收纳。下一步传播重点应从“功能多”升级为“稳定、安全、适合真实家庭游戏场景”。
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      数据来源：用户提供的媒体列表、JSAUX 官方页面及对应媒体页面可见内容。评论洞察主要来自 Nintendo Life 可见评论区；The Verge 评论区为动态加载，未纳入定性样本。
+    </footer>
+  </main>
+
+
+</body></html>
